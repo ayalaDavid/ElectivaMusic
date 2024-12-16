@@ -1,0 +1,190 @@
+/* Estilo general */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1E1E2E, #7700cf); /* Azul marino a morado */
+  color: #F8F8F2;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+header {
+  padding: 5px;
+  background: linear-gradient(135deg, #1E1E2E, #560082);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #00CED1;
+}
+
+header h2 {
+  font-size: 2rem;
+  color: #00CED1;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background: #6c0082;
+  color: #A6ACCD;
+}
+
+footer p {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Estilo para los elementos del ranking */
+ul#ranking {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+ul#ranking li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #2E3440;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+ul#ranking li:hover {
+  transform: scale(1.05);
+}
+
+/* Imagen circular con borde */
+ul#ranking li img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px solid #00CED1;
+  margin-right: 15px;
+}
+
+/* Contenedor para título y artista */
+ul#ranking li .song-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 5px; /* Espacio entre el título y el artista */
+  border-radius: 50px; /* Borde cilíndrico */
+  padding: 10px;
+}
+
+/* Cilindro para la canción */
+ul#ranking li .song-info .title {
+  position: relative;
+  background: linear-gradient(135deg, #00ADB5, #A6ACCD); /* Gradiente para el título */
+  padding: 15px;
+  color: #F8F8F2;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50px; /* Bordes completamente redondeados para cilindro */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Cilindro para el artista */
+ul#ranking li .song-info .artist {
+  position: relative;
+  background: linear-gradient(135deg, #00ADB5, #6C63FF); /* Gradiente para el artista */
+  padding: 10px;
+  color: #F8F8F2;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50px; /* Bordes completamente redondeados para cilindro */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Flechas dinámicas */
+ul#ranking li .arrow {
+  font-size: 1.5rem;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+ul#ranking li .arrow.up {
+  color: #00FF7F; /* Verde para subida */
+}
+
+ul#ranking li .arrow.down {
+  color: #FF4500; /* Rojo para bajada */
+}
+
+ul#ranking li .arrow.stay {
+  color: #A6ACCD; /* Gris para sin cambio */
+}
+
+/* Estilo para la estrella de favorito */
+.favorite {
+  font-size: 1.2rem;
+  color: #FFD700;
+  margin-left: 5px;
+}
+
+/* Estilo para el contenedor de la imagen */
+#imageContainer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#imageContainer img {
+  max-width: 90%;
+  border-radius: 10px;
+  border: 2px solid #F8F8F2;
+}
+
+#imageContainer button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  transition: background 0.3s;
+}
+
+#imageContainer button:hover {
+  background-color: #00ADB5;
+  color: #FFD700;
+}
+
+/* Estilo para los botones */
+button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 50px; /* Botones cilíndricos */
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+  color: #F8F8F2;
+  outline: none;
+}
+
+
+
+/* Botones de 'Crear Imagen' y 'Mezclar Ranking'*/
+.btn-primary {
+  background: linear-gradient(135deg, #00ADB5, #A6ACCD); /* Gradiente */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary:hover {
+  transform: scale(1.05); /* Efecto de hover */
+  background: linear-gradient(135deg, #009F9C, #8A9ECF);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
