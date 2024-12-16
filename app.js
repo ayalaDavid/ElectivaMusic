@@ -1,9 +1,9 @@
 const songs = [
-  { title: "Purple Stain", artist: "Red Hot Chili Peppers", img: "img/PurpleStain.jpeg", position: 0, favorite: false },
-  { title: "The Nights", artist: "Avicii", img: "img/TheNights.jpg", position: 1, favorite: false },
-  { title: "Never Enough", artist: "Eminem", img: "img/NeverEnough.jpg", position: 2, favorite: false },
-  { title: "Sonrisa", artist: "Villagran Bolaños", img: "img/Sonrisa.jpg", position: 3, favorite: false },
-  { title: "Young, Wild & Free", artist: "Snoop Dog", img: "img/YWF.jpeg", position: 4, favorite: false }
+  { title: "Purple Stain", artist: "RED HOT CHILI PEPPERS", img: "img/PurpleStain.jpeg", position: 0, favorite: false },
+  { title: "The Nights", artist: "AVICII", img: "img/TheNights.jpg", position: 1, favorite: false },
+  { title: "Never Enough", artist: "EMINEM", img: "img/NeverEnough.jpg", position: 2, favorite: false },
+  { title: "Sonrisa", artist: "VILLAGRAN BOLAÑOS", img: "img/Sonrisa.jpg", position: 3, favorite: false },
+  { title: "YOUNG, WILD & FREE", artist: "SNOOP DOG", img: "img/YWF.jpeg", position: 4, favorite: false }
 ];
 
 function assignFavorites() {
