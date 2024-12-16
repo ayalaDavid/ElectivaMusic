@@ -81,7 +81,7 @@ ul#ranking li .song-info {
   padding: 10px;
 }
 
-/* Cilindro para la canción */
+/* Trapecio para la canción */
 ul#ranking li .song-info .title {
   position: relative;
   background: linear-gradient(135deg, #00ADB5, #A6ACCD); /* Gradiente para el título */
@@ -90,11 +90,11 @@ ul#ranking li .song-info .title {
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
-  border-radius: 50px; /* Bordes completamente redondeados para cilindro */
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%); /* Forma de trapecio rectangular */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
-/* Cilindro para el artista */
+/* Trapecio para el artista */
 ul#ranking li .song-info .artist {
   position: relative;
   background: linear-gradient(135deg, #00ADB5, #6C63FF); /* Gradiente para el artista */
@@ -103,9 +103,10 @@ ul#ranking li .song-info .artist {
   font-size: 0.9rem;
   font-weight: bold;
   text-align: center;
-  border-radius: 50px; /* Bordes completamente redondeados para cilindro */
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%); /* Forma de trapecio rectangular */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
+
 
 /* Flechas dinámicas */
 ul#ranking li .arrow {
