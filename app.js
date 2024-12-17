@@ -1,11 +1,12 @@
 const songs = [
-  { title: "Purple Stain", artist: "RED HOT CHILI PEPPERS", img: "img/PurpleStain.jpeg", position: 0, favorite: false },
-  { title: "The Nights", artist: "AVICII", img: "img/TheNights.jpg", position: 1, favorite: false },
-  { title: "Never Enough", artist: "EMINEM", img: "img/NeverEnough.jpg", position: 2, favorite: false },
-  { title: "Sonrisa", artist: "VILLAGRAN BOLAÑOS", img: "img/Sonrisa.jpg", position: 3, favorite: false },
+  { title: "PURPLE STAIN", artist: "RED HOT CHILI PEPPERS", img: "img/PurpleStain.jpeg", position: 0, favorite: false },
+  { title: "THE NIGHTS", artist: "AVICII", img: "img/TheNights.jpg", position: 1, favorite: false },
+  { title: "NEVER ENOUGH", artist: "EMINEM", img: "img/NeverEnough.jpg", position: 2, favorite: false },
+  { title: "SONRISA", artist: "VILLAGRAN BOLAÑOS", img: "img/Sonrisa.jpg", position: 3, favorite: false },
   { title: "YOUNG, WILD & FREE", artist: "SNOOP DOG", img: "img/YWF.jpeg", position: 4, favorite: false }
 ];
 
+console.log("Inicia aplicación");
 function assignFavorites() {
   songs.forEach(song => song.favorite = false);
   const favoriteCount = Math.floor(Math.random() * 2) + 1;
@@ -24,7 +25,7 @@ function assignFavorites() {
 function displayRanking() {
   const rankingList = document.getElementById("ranking");
   rankingList.innerHTML = "";
-
+  console.log("Mezcla ranking");
   songs.forEach((song, index) => {
     let arrow = "";
     if (index === 0) arrow = "";
